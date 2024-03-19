@@ -3,28 +3,21 @@
 .timer-container {
   text-align: center;
   margin-top: 50px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 400px;
-  height: 400px;
-  margin-left: 34%;
-  background-color: #d6e7a4;
-}
-
-.timer {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #333;
+  background-color: #2ecc71;
+  box-sizing: border-box;
+  width: 450px;
+  height: 350px;
+  padding-top: 35px;
+  margin-left: 35%;
+  border-radius: 30px;
 }
 
 .btn-container {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .btn {
-  background-color: #4CAF50;
+  background-color: #54b357;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -32,28 +25,57 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px 15px;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #318535;
+  background-color: #45a049;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-box {
+  margin: 0 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.time {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
 }
 
 .status {
   font-style: italic;
   color: #666;
-  margin-top: 10px;
-  display: inline-block;
+  margin-top: 20px;
   font-size: 2rem;
   font-weight: bold;
 }
 
+.blinking {
+  animation: blink 1.5s infinite;
+}
+
 @keyframes blink {
   0% {
-    opacity: 0.8;
+    opacity: 0;
   }
   50% {
     opacity: 1;
@@ -61,8 +83,4 @@
   100% {
     opacity: 0;
   }
-}
-
-.blinking {
-  animation: blink 1.5s infinite;
 }
